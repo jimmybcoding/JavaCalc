@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&family=Josefin+Sans:wght@500&family=Poppins:wght@200&family=Silkscreen&display=swap');
+
+body {
+    background: linear-gradient(90deg, rgb(52, 52, 114), rgb(116, 112, 108));
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 65vh;
+    width: 25vw;
+}
+
+.body {
+    border: 2px solid black;
+    font-size: 2em;
+    background-color: dodgerblue;
+    color: black;
+}
+
+.body:hover {
+    background-color: grey;
+    color: antiquewhite;
+}
+
+.previous {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: right;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 4vh;
+}
+
+.current {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: right;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 8vh;
+    overflow: hidden;
+}
+
+.clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    font-family: 'Silkscreen', cursive;
+    color: antiquewhite;
+}
+
+.delete {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-family: 'Silkscreen', cursive;
+    text-align: right;
+    color: antiquewhite;
+}
+
+.equals {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: orange;
+}
